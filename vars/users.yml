@@ -1,0 +1,29 @@
+---
+genericusers_groups:
+  - name: "ckan_dev"
+
+genericusers_users:
+  - name: 'nigelb'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAub2He4lZRpsqxetF8+C1OCaVKfqo2FYxYKRhmBSzyqKFPC0Fg9WylQvqt+DXULCHyZn88kwuf39ifAaiWZ+Js7aXo3+aT6M/ggGI15z3DFhYkiVkU1mUTr8jHF8YaF8x7TRwxrMCQrrRoNgifN97lWhlvtQWFaIaUkXQTDXuZdMzLzJqoZ+Gvw/bjRkp9KyyVzWt99b/PWBWRJKL8DzKIH9/oIvLIow1ucP4DshZs/FZN1upT5RhRb+ydmcDgTj8054Va6XxQBJ1vWqShofvrUwkWQA3bGhZhtAfQHfpCvdCUjxr0C5GRZa8V8k6VKQJdOb2Sqjrq7PucR1G2CkSAQ== nigelbabu@nigelbabu-laptop"
+  - name: 'amercader'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbltE2VNWmeaPpMhDOYuNo++ZSnrCCxUi2HAmOIcATTSjc2mMi3xfVcAXeuHrJRSpNdB1cH6O0rSBJfikYV3zlz1nFVQD4uR4yRUI5Bw92PcgoTkVNNjLX/FjNVlSwnGTSoXMoCJl8Hx3gvjoplMGZgPtOlujPr4XJpJbld82+Oyc23wkBXZuf6m4RpcT/yPcJq++kY++2VzFmjeEQeGMz6pWkHAvx2iXKUWDzxHYgQi9lrqtlLG56IOW10wlLjDZNP1ij97MJyHOlPaQ1oHgTcus88YXkFbr3K8Zm5l/7FnXgGDey0NPMdrHQJu9gYQTTIZJ+hI2K/K3pI9inAgaZ amercadero@gmail.com"
+  - name: 'seanh'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAu/MZqxJCkPOkzTfS+bcsuL7O0IfSQLyfH345fakk2d6LXPoLfCnnPdDlqiPmM8E+QR6/jtw+VE6qZcZFEgUV0zjJf6lvAj0GzJA8JN5h0hvECcsvF/35Beh5TlPkcCgux7x4MkLyhFAJDwWs8wu3ti/nzOV3ZMNp9/D2sPktlBnFz/k1hWzswm+0wQM5h0VSVqMM2m4IKhqHs88oqxnvBSMI4eAbH7+ri7RsppIpThpasPGpZWzPJEcmoAxNEF23ZuvHQ+lW3zvOJGiziqr5hSLxrOeb1l0kEymTMbOQBnpdN2T8Ha9XIVDEN+RyoKfQd6goeJb3kQ8A584mIpD8Jw== seanh@sooty.local"
+  - name: 'joetsoi'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD8wJ4QeC0Ef0MEW9M3m/tSIXisNYBTJ6OnnMVesOak0/D5//zYeJMUwmQ0OtBvoVmSw7KuXg74m9IGszRqMEDmav1N8Tbl7L1erXDBEXju8SkmiVY+EHgy8tvJhzCOd0cHcD6T77SQkUbzKif0iBC5xDgpkrXylaVzIZTJclsUNpb/yea44oFVoNULeqtw1koScrKociqO1NBttvVRq9VhaDku2+NjNZiRvJ5X21oezV7fc6mp4nd+xWcWvTWJV7iAwgL+fgdC/jow/lCzNPY1SvltcZ1v7RzCtpIMctiMWf1V7uFtc0Ptlpnlij1pHkZIu95bupGGX6OGr9ExvD3N joe.yeung.tsoi@gmail.com"
+  - name: 'vitor'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUnItn4uDxgcmbloeS5qMiHw829kbr5XkfjOrOmKhAMWd9ALlm7S3PbbpbTesRtSwaATZETAdJHiLNv+UbCdl+SmewpIIulbTXlaSICMopoYFTGpbxUHhqP0qNMzWHpsail9cGPB/KVl0RAFoOtxB2LHfjA6i+ccCujTS6Z29GaO/riHv72UOfsKu5GjUCF3xyP5dhQSPW5Vr15Qe6e35YhGLcWz2nslnM2iOaqZ7Ylu45AMlwbu0MiKN8rHvlgcTFUjDo+WRcvtljuD0dhcks7HqLlg/85tSTEPKDW0zYMbEfp/IlL3bO2CGbOzu4RCh+CUQ80rj+EPohFXk7tnij vitor@luna"
+  - name: 'tryggvib'
+    groups: ['ckan_dev']
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxRPdCcwbhPG9PYYLqiiUHHJzLOElrP2vA5wpQ+YrKOIYJyyTUSc8CSrK/3jVv4nnRfHbUluEllwB07jbegHXiDpZfTI3EQsLFMtw4mcLh08bhHyg2SrNRNwXejIpgvHnJZ5qG01ha6kncxbPqgctxUvaNqwdozhQmgAUWb090SHE/VgP1eYVMhNFdv6XDKlLs4aydZK5aXYCnuMpEzA1Zj7XvsY+ktML7DPyf/y30x6iC7fAUWm8UKNV0UmAeIlsVexQNSzi19mYBbG4Q5dZrqmr9HfAUWlmDCZL0EBHiIfCGKzF5NJes3qlA476uKnlx+PBvz7uD+mpxAm4lUc7D tryggvib@fsfi.is"

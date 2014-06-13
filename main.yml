@@ -1,0 +1,37 @@
+- hosts: all
+  vars_files:
+    - vars/users.yml
+  roles:
+    - {role: Ansibles.generic-users, tags: ['users']}
+  tasks:
+    - name: update apt
+      command: apt-get update
+      tags: ['apt']
+
+    - name: upgrade apt
+      command: apt-get upgrade
+      tags: ['apt']
+
+    - name: install unattended-upgrades
+      command: apt-get install unattended-upgrades
+      tags: ['upgrades']
+
+    - name: run unattended-upgrades
+      command: unattended-upgrades
+      tags: ['upgrades']
+
+    - name: Copy sudoers file for safety
+      command: cp -f /etc/sudoers /etc/sudoers.tmp
+      tags: ['sudo']
+
+    - name: Create sudoers file backup
+      command: cp -f /etc/sudoers /etc/sudoers.bak
+      tags: ['sudo']
+
+    - name: give ckan_dev group sudo access
+      lineinfile: dest=/etc/sudoers.tmp state=present regexp='^%ckan_dev' line='%ckan_dev ALL=(ALL) NOPASSWD:ALL'
+      tags: ['sudo']
+
+    - name: Final sudoers file check
+      shell: visudo -q -c -f /etc/sudoers.tmp && cp -f /etc/sudoers.tmp /etc/sudoers
+      tags: ['sudo']
