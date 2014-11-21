@@ -11,7 +11,7 @@ Now run the ansible playbook against this host file
 
     ansible-playbook -i hosts main.yml
 
-You may want to use the following paramters to ansible
+You may want to pass the following paramters to ansible:
 * `-u` to provide the user for SSH.
 * `-s` to run commands as sudo.
 * `-k` to ask for SSH password.
