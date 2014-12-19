@@ -4,9 +4,9 @@
   roles:
     - {role: Ansibles.generic-users, tags: ['users']}
   tasks:
-    - name: updates server
+    - name: updates apt cache
       apt: update_cache=yes
-      tags: ['apt']
+      tags: ['apt_update']
 
     - name: upgrade server
       apt: upgrade=full
