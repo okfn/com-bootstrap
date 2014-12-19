@@ -4,21 +4,21 @@
   roles:
     - {role: Ansibles.generic-users, tags: ['users']}
   tasks:
-    - name: update apt
-      command: apt-get update
-      tags: ['apt']
+    - name: updates apt cache
+      apt: update_cache=yes
+      tags: ['apt_update']
 
-    - name: upgrade apt
-      command: apt-get upgrade
+    - name: upgrade server
+      apt: upgrade=full
       tags: ['apt']
 
     - name: install unattended-upgrades
-      command: apt-get install unattended-upgrades
-      tags: ['upgrades']
+      apt: name=unattended-upgrades state=present
+      tags: ['install-unattended-upgrades']
 
     - name: run unattended-upgrades
       command: unattended-upgrades
-      tags: ['upgrades']
+      tags: ['run-unattended-upgrades']
 
     - name: Copy sudoers file for safety
       command: cp -f /etc/sudoers /etc/sudoers.tmp
